@@ -9,6 +9,14 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Miwok">
+
+        <activity
+            android:name=".Numbers"
+            android:label="@string/category_numbers"
+        />
+        <activity android:name=".Phrases"/>
+        <activity android:name=".Colors" />
+        <activity android:name=".Family" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
