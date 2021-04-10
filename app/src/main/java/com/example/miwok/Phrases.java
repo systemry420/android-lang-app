@@ -12,7 +12,7 @@ public class Phrases extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_phrases);
+        setContentView(R.layout.words_list);
 
         ArrayList<Word> words = new ArrayList<>();
         words.add(new Word("What is your name?", "tinnә oyaase'nә"));

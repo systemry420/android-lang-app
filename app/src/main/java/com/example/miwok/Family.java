@@ -12,7 +12,7 @@ public class Family extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_family);
+        setContentView(R.layout.words_list);
 
         ArrayList<Word> words = new ArrayList<>();
         words.add(new Word("father", "әpә"));
