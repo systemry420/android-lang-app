@@ -5,6 +5,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -41,6 +42,14 @@ public class WordAdapter extends ArrayAdapter<Word> {
         // Get the version number from the current AndroidFlavor object and
         // set this text on the number TextView
         englishTextView.setText(currentWord.getDefaultWord());
+
+        ImageView image = listItemView.findViewById(R.id.image);
+        if(currentWord.hasImage()) {
+            image.setImageResource(currentWord.getnImageResID());
+        } else {
+            image.setVisibility(View.GONE);
+        }
+
 
         // Return the whole list item layout (containing 2 TextViews and an ImageView)
         // so that it can be shown in the ListView
